@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class selector style */
+        .horizontal 
+        {
+            background-color: aliceblue;
+            padding:10px;
+            border: 2px solid black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            /* display list vertically */
+            display: flex;
+            flex-direction: column;
+            
+            /* gap between items */
+            gap: 20px;
+
+        }
+
+        .vertical
+        {
+            background-color: beige;
+            /* remove bullets */
+            list-style-type: none;
+
+            display: flex;
+            flex-direction: row;
+            /* gap:20px; */
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex </h1>
+    <hr />
+    <div class="horizontal">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Payments</a>
+        <a href="#">Contact us</a>
+    </div>
+    
+    <ul class="vertical">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+</body>
+
+</html>
